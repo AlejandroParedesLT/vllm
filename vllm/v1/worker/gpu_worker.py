@@ -172,6 +172,7 @@ class Worker(WorkerBase):
                 name: buffer.cpu().clone() for name, buffer in model.named_buffers()
             }
 
+<<<<<<< HEAD
         # Synchronize before unmapping GPU memory to avoid racing with
         # in-flight KV offload transfers (same pattern as _python_free_callback).
         torch.cuda.synchronize()
